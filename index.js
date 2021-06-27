@@ -16,21 +16,7 @@ res.send("Hello Wordl!");
  
 })
 
-app.get("/Xgym",function(req, res){
-
-     
-
-    res.sendFile(path.join(__dirname+'/public/gym/index.html'));
- })
-
-
- app.get("/Xgourmet",function(req, res){
-    console.log("--------------"); 
-    console.log(req.baseUrl);  
-    res.sendFile(path.join(__dirname+'/public/gym/index.html'));
-     
-
- })
+ 
 
 
  app.get("*",function(req, res){
