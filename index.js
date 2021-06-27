@@ -44,7 +44,7 @@ app.get("/Xgym",function(req, res){
         if (fs.existsSync(index)) {
           //file exists
 
-          res.send(index);
+          res.render(index);
         } else res.send("404");
       } catch(err) {
         console.error(err)
